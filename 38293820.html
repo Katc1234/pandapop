@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title> Korean HQ! </title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+line-height: 1.6;
+    		}
+
+    .navbar {
+      background-color: #FF856C;
+      position: fixed;
+	  height: 150px;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    		}
+
+    .navbar-logo img {
+		position: relative;
+		top: 15px;
+		left: 25px;
+      height: 170px;
+      padding: 0px;
+    		}
+
+    .navbar-links {
+      display: flex;
+	  justify-content: right;
+      align-items: center;
+	  position: relative;
+	  top: -100px;
+      margin-right: 40px;
+    		}
+
+    .navbar-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 10px 15px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    		}
+
+    .navbar-links a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    		}
+
+    .navbar-links a.active {
+      background-color: purple;
+    		}
+
+    .navbar-links a:last-child {
+      margin-left: 20px;
+      background-color: #6A9C72;
+      transition: background-color 0.3s ease;
+    		}
+
+    .navbar-links a:last-child:hover {
+      background-color: #45a246;
+    }
+
+    .navbar-links a:last-child img {
+      height: 18px;
+      margin-right: 5px;
+    }
+
+
+    .navbar-marquee {
+      background-color: #6A9C72;
+      color: #fff;
+      font-size: 14px;
+      padding: 10px 15px;
+      white-space: nowrap;
+      overflow: hidden;
+	position: relative;
+	top: 150px;
+	width: 97.6%;
+        z-index: 4;
+        }
+    			}
+
+
+
+.sticky{
+
+        height: 100px;
+        border: solid 1px black;
+        position: sticky;
+        top: 0px;
+        background-color: ;
+        
+        }
+        
+        
+        
+        .text{
+            position: absolute;
+            height:100%;
+			width: 100%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            font-size: 40px;
+            font-weight: bold;
+            font-variant: small-caps;
+            
+            }
+
+
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+section {
+  padding: 20px 0;
+}
+
+section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #FF8E6E;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.menu-item img {
+  width: 300px;
+  height: 200px;
+  margin-right: 20px;
+  border-radius: 50%;
+  border: 5px solid #FF8E6E;
+}
+ 
+.menu-item img:hover{
+	transform:scaleX(-1);
+	transition:transform 1.5s;
+	}
+
+
+.menu-item h3 {
+  font-size: 24px;
+  color: #FF8E6E;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.menu-item p {
+  font-size: 16px;
+  color: #444;
+  font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+  background-color:#FF856C;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+
+
+.calendar-item {
+margin-bottom: 10px;
+}
+
+.calendar-item h3 {
+font-size: 18px;
+margin-bottom: 5px;
+font-family: 'Montserrat', sans-serif;
+}
+
+.calendar-item p {
+font-size: 14px;
+color: #666;
+font-family: 'Montserrat', sans-serif;
+}
+
+.title1 {
+font-size: 35px;
+position: absolute;
+top: 0px;
+left: 250px;
+}
+
+.title2 {
+position: absolute;
+font-size: 35px;
+top: 35px;
+left: 250px;
+}
+
+.title3 {
+position: absolute;
+font-size: 35px;
+top: 70px;
+left: 250px;
+}
+
+    .filler{
+        height: 150px;
+        border: solid 1px black;
+        background-color: lightgreen;
+        position: relative;
+        z-index: -1;
+        }
+
+/* Hero section styles */
+.hero {
+  padding:0px 0;
+  text-align: center;
+  color: #fff;
+  background-image: url('images/foodtruck.jpg');
+  background-size: cover;
+  background-color: #00000080;
+  z-index: 5;
+}
+
+.hero2 {
+  padding: 300px 0;
+  text-align: center;
+  background-color: #00000080;
+  z-index: 1;
+ }
+  .hero1 {
+  padding:0px 0;
+  color: #fff;
+  background-image: url('images/locations.png');
+  background-size: cover;
+  width: 100%;
+  height: 770px;
+  background-color: #00000080;
+  z-index: 5;
+}
+
+.hero3 {
+  padding: 250px 0;
+  text-align: center;
+  background-color: #00000080;
+  z-index: 1;
+}
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6A9C72;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #FF856C;
+}
+
+.img {
+position: absolute;
+top: 120%;
+width: 100%;
+left:0px;
+x-index: 10;
+}
+
+.fishbox{
+position:absolute;
+right:15%;
+width: 30%;
+height: 60%;
+}
+
+figure {width: 640px; padding: 5px; border: 1px solid #000000;}
+figcaption {text-align:center; font-family: Papyrus, fantasy;}
+  </style>
+
+</head>
+
+<body>
+<div class="navbar-marquee">
+    <marquee direction="right" behavior="scroll" scrollamount="10">Up to 50% off on your first purchase!!! BUY NOW!</marquee>
+  </div></div>
+    <div class="hero">
+	<div class="hero2">
+      <div class="container">
+        <h2>Authentic Korean Desserts on the Street</h2>
+        <a href="#menu" class="btn">View Menu</a>
+      </div>
+    </div>
+	</div>
+<div class="sticky"> 
+
+<div class="text">
+
+  <div class="navbar">
+<h1 class="title1">PANDA </h1>
+	<h1 class="title2">POP</h1>
+	<h1 class="title3">CAFE</h1>
+	
+    <div class="navbar-logo">
+
+      <img src="images/IceCreamLogoo.png" alt="Logo" width="200px" height="150px">
+    </div>
+	
+    <div class="navbar-links">
+      <a class="active" href="#about">About Us</a>
+      <a href="#menu">Menu</a>
+      <a href="#catering">Catering</a>
+      <a href="#contact">Contact</a>
+      <a href="#cart">
+        <img src="images/cart.png" width="30px" height="200px" alt="Cart">
+        Cart
+      </a>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+<main>
+
+<section id="about">
+
+<div class="img">
+<br><br>
+<center>
+        <img src="images/AboutUs.png" alt="ABT US">
+		</center>
+</div></div>
+</section>
+<br><br><br><br>
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Welcome to our Korean Dessert Food Truck! We specialize in serving delicious Korean desserts made with high-quality ingredients. Our menu includes a variety of popular treats, including Taiyaki Ice Cream with fish-shaped waffle cones, soft-serve icecream, colorful mochi, and Rilakkuma ice cream. Come and eat these special treats on the street!</p>
+    </div>
+
+<br><br>
+  <section id="menu">
+  <br><br><br><br><br>
+    <div class="container">
+      <h2>Our Menu</h2>
+      <div class="menu-item">
+        <img src="images/Icecream.png" alt="Taiyaki Ice Cream">
+        <h3>Taiyaki Ice Cream</h3>
+        <p>A delightful treat consisting of a fish-shaped waffle cone filled with creamy ice cream flavors of your choice.</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/BakedMochiDonuts.jpg" alt="Mochi" width="300px" height="200px">
+        <h3>Mochi</h3>
+        <p>Soft and chewy rice cakes in various flavors, including matcha, red bean, and strawberry.</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/rika.jpg" alt="Rilakkuma Ice Cream" width="300px" height="200px">
+        <h3>Rilakkuma Ice Cream</h3>
+        <p>Cute and delicious ice cream cones topped with adorable Rilakkuma characters made of chocolate and cookies.</p>
+      </div>
+    </div>
+  </section>
+<center>
+  <section id="location">
+  
+    <div class="container">
+      <h2>Locations</h2>
+      <p>Visit us at the following locations:</p>
+      <li>Griffin Rd, Weston, Florida</li>
+	  <li>Town Center Drive, Weston, Florida</li>
+	  <li>Indian Trace Drive, Weston, Florida</li>
+	  <li>Bonaventure Boulevard, Weston, Florida</li>
+	  </center>
+	   <section id="catering">
+	     <br><br><br><br>
+		    <div class="hero1">
+	<div class="hero3">
+      <div class="container">
+	  </div>
+        
+	  <h2> Want us at your doorstep?</h2>
+	  <p> Fill out the following information below!</p>
+	  <fieldset>
+<legend> Your Location</legend>
+<label> Street: <input type="text" name="street" id="street" size="54"></label><br><br>
+<label> City: <input type="text" name="city" id="city"></label>
+<label> State: <input type="text" name="state" id="state" maxlength="2"size="5"></label>
+<label> Zip: <input type="text" name="zip" id="zip" maxlength="5" size="5"></label>
+</fieldset>
+    </div>
+</div></div></div>
+</center>
+  </section>
+  <section id="socials">
+  <br><br><br><br>   
+		<div class="container">
+		<center><h2><i> Stay in the know... </i></h2></center>
+		<div class="bigbox">
+		
+	
+</section>
+  <section id="calendar">
+    <div class="container">
+
+      <h2>Calendar</h2>
+      <p>Check out our upcoming events:</p>
+      <div class="calendar-item">
+        <h3>May 20, 2023</h3>
+        <p>Korean Dessert Festival Day 1</p>
+		<h3>May 21, 2023</h3>
+        <p>Korean Dessert Festival Day 2</p>
+		<h3>May 23, 2023</h3>
+        <p>Korean Dessert Festival Day 3</p>
+      </div>
+      <div class="calendar-item">
+        <h3>June
+10, 2023</h3>
+<p>Food Truck Friday</p>
+</div>
+</div>
+
+  </section>
+
+  <section id="contact">
+  <br><br><br><br>
+    <div class="container">
+      <h2>Contact Us</h2>
+	  <p> Leave a review today!</p>
+
+<input type="text" placeholder="First Name" required="required">
+<br><br>
+<input type="text" placeholder="Last Name" required="required">
+<br><br>
+<input type="text" placeholder="E-mail" required="required">
+<br><br>
+<label for="myChoice"> Rate the quality and taste of the desserts: <br></label> </br>
+Low <input type="range" name="myChoice" id="myChoice" min="1" max="100"> High
+<br><br>
+Comments or Concerns:
+<br><br>
+<textarea cols="40" rows="8" placeholder="Describe How you felt at Panda Pop Cafe"></textarea>
+<br><br>
+<input type="submit">
+<input type="reset">
+<br><br>
+      <p>If you have any buisness inquiries or would like to apply for<br> a job at Panda Pop Cafe, fill out the information below:</p>
+	  <input type="text" placeholder="First Name" required="required">
+<br><br>
+<input type="text" placeholder="Last Name" required="required">
+<br><br>
+<input type="text" placeholder="E-mail" required="required">
+<br><br>
+
+Job resume or buisness questions:
+<br><br>
+<textarea cols="40" rows="8" placeholder="Attach your resume or any busness inquiries/colaborations"></textarea>
+<br><br>
+<input type="submit">
+<input type="reset">
+</form>
+</div>
+	
+<section id="cart">
+  <br><br><br><br>  
+<figure>
+		<img src="images/fish.png" class="fishbox"alt="Mochi" width="300px" height="200px">
+  <figcaption>Look at this delious icecream with Panda Pop Dots&trade;</figcaption>
+</figure>  
+		<div class="container">
+		<h2> Order now! </h2>
+		
+	<form>
+	
+	Name: <br>
+	<input type="text">
+	<br><br>
+	I would like to order: <br>
+	<input type="checkbox" value="tropicalsplash">
+	Taiyaki Ice Cream <br>
+	<input type="checkbox" value="smoothsunset">
+	Mochi <br>
+	<input type="checkbox" value="brightsunrise">
+	Rilakkuma Ice Cream <br><br>
+	
+	And my topping(s) or decoration(s) are: <br>
+	<input type="checkbox" value="protein"> Wafer <br>
+	<input type="checkbox" value="vitaminb"> Pocky <br>
+	<input type="checkbox" value="vitaminb"> Panda Pop dots <br>
+	<input type="checkbox" value="vitaminb"> Chocolate syrup <br>
+	<input type="checkbox" value="vitaminb"> Mocha syrup <br>
+	<input type="checkbox" value="vitaminb"> Sprinkles <br>
+	<input type="checkbox" value="vitaminc"> Mini flower umbrella <br><br>
+	
+	<input type="submit" value="Submit">
+
+</form>
+</section>
+	  </div>
+<div class="containerc">
+	<div class="date">
+		<h2>May 2023</h2>
+		<div class="days">
+			<div class="day"> Su</div>
+			<div class="day"> Mo</div>
+			<div class="day"> Tu</div>
+			<div class="day"> We</div>
+			<div class="day"> Th</div>
+			<div class="day"> Fr</div>
+			<div class="day"> Sa</div>
+			
+			<div class="number">1</div>
+			<div class="number">2</div>
+			<div class="number">3</div>
+			<div class="number">4</div>
+			<div class="number">5</div>
+			<div class="number">6</div>
+			<div class="number">7</div>
+			<div class="number">8</div>
+			<div class="number">9</div>
+			<div class="number">10</div>
+			<div class="number">11</div>
+			<div class="number">12</div>
+			<div class="number">13</div>
+			<div class="number">14</div>
+			<div class="number">15</div>
+			<div class="number">16</div>
+			<div class="number">17</div>
+			<div class="number">18</div>
+			<div class="number">19</div>
+			<div class="number">20</div>
+			<div class="number">21</div>
+			<div class="number active">22</div>
+			<div class="number">23</div>
+			<div class="number">24</div>
+			<div class="number">25</div>
+			<div class="number">26</div>
+			<div class="number">27</div>
+			<div class="number">28</div>
+			<div class="number">29</div>
+			<div class="number">30</div>
+			<div class="number">31</div>
+		</div>
+	</div>
+		
+		<div class="image">
+		
+			
+</body>
+  </section>
+  <footer>
+    <p>&copy; 2023 Korean Dessert Food Truck. All rights reserved.</p>
+  </footer>
+ 
+</html>
+</body>
+</html>
